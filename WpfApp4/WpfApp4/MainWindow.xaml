@@ -1,0 +1,117 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Главная страница">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="68*"/>
+                        <ColumnDefinition Width="329*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Margin="-62,-44,-62,-77" Source="/самолет.jpg" Stretch="Fill" Grid.ColumnSpan="2"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="18,18,0,0" TextWrapping="Wrap" Text="Российская авиакомпания, выполняет внутренние и международные пассажирские авиаперевозки, входит в перечень системообразующих организаций РФ, является крупнейшей частной авиакомпанией России. До апреля 2022 года являлась членом глобального авиационного альянса Oneworld, по состоянию на октябрь 2022 года членство приостановлено." VerticalAlignment="Top" Height="156" Width="419" Grid.ColumnSpan="2" FontFamily="Algerian" FontSize="16" FontWeight="Bold" Foreground="#FFF8FFD0"/>
+                    <Label Grid.Column="1" Content="S7 Airlines" HorizontalAlignment="Left" Margin="398,10,0,0" VerticalAlignment="Top" Height="65" Width="198" FontSize="36" FontFamily="Bauhaus 93"/>
+                    <Button Grid.Column="1" Content="Закрыть страницу" HorizontalAlignment="Left" Margin="476,325,0,0" VerticalAlignment="Top" Height="49" Width="144" Background="#FFD03838" Foreground="#FFF7F7F7" FontWeight="Bold"/>
+                    <Button Content="Получать рассылку" HorizontalAlignment="Left" Height="25" Margin="85,325,0,0" VerticalAlignment="Top" Width="132" Grid.ColumnSpan="2" Foreground="White" Background="#FFDE5757" Click="Button_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Работники
+                     ">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="36*"/>
+                        <ColumnDefinition Width="361*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Margin="-42,-155,-42,-119" Source="/экипаж.jpg" Stretch="Fill" Grid.ColumnSpan="2"/>
+                    <Label Content="Летчики" HorizontalAlignment="Left" Margin="67,18,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.169,0.506" Grid.ColumnSpan="2" Background="White" Foreground="#FFFB7F00" FontSize="16" FontWeight="Bold"/>
+                    <Label Grid.Column="1" Content="Механики" HorizontalAlignment="Left" Margin="277,17,0,0" VerticalAlignment="Top" FontSize="16" Background="White" Foreground="#FFFF7500" FontWeight="Bold"/>
+                    <Label Grid.Column="1" Content="Обслуживающий персонал" HorizontalAlignment="Left" Margin="475,17,0,0" VerticalAlignment="Top" FontSize="16" Background="White" Foreground="#FFFD8B00" FontWeight="Bold"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="20,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="92" Width="183" Background="White" FontFamily="Times New Roman"><Run Text="Платонов Глеб Арсентьевич"/><LineBreak/><Run Text="Иванов Егор Артёмович"/><LineBreak/><Run Text="Морозов Святослав Данилович"/><LineBreak/><Run Text="Балашов Тимофей Матвеевич"/><LineBreak/><Run Text="Козлова Алиса Андреевна"/><LineBreak/><Run Text="Гаврилова Милана Марковна"/></TextBlock>
+                    <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="239,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="169" Background="White" FontFamily="Times New Roman"><Run Text="Любимов Дмитрий Фёдорович"/><LineBreak/><Run Text="Дорофеев Никита Тимурович"/><LineBreak/><Run Text="Киселев Иван Дмитриевич"/><LineBreak/><Run Text="Кузин Дамир Андреевич"/><LineBreak/><Run/></TextBlock>
+                    <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="504,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="169" Background="White" FontFamily="Times New Roman"><Run Text="Зайцева Алиса Васильевна"/><LineBreak/><Run Text="Михайлова Анжелика "/><LineBreak/><Run Text="Родионов Степан Максимович"/><LineBreak/><Run Text="Иванова Полина Давидовна"/><LineBreak/><Run Text="Фролов Артём Фёдорович"/><LineBreak/><Run Text="Борисова Арина Леонидовна"/></TextBlock>
+                    <Button Grid.Column="1" Content="Закрыть страницу" HorizontalAlignment="Left" Margin="542,326,0,0" VerticalAlignment="Top" Height="49" Width="144" Background="#FFD03838" Foreground="#FFF7F7F7" FontWeight="Bold" Click="Button_Click_1"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Склад
+                     
+                     ">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="36*"/>
+                        <ColumnDefinition Width="361*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Margin="-42,-155,-42,-119" Source="/склад.jpg" Stretch="Fill" Grid.ColumnSpan="2"/>
+                    <Label Content="Чертежи" HorizontalAlignment="Left" Margin="67,18,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.169,0.506" Grid.ColumnSpan="2" Background="White" Foreground="#FFFB7F00" FontSize="16" FontWeight="Bold"/>
+                    <Label Grid.Column="1" Content="Запчасти" HorizontalAlignment="Left" Margin="277,17,0,0" VerticalAlignment="Top" FontSize="16" Background="White" Foreground="#FFFF7500" FontWeight="Bold"/>
+                    <Label Grid.Column="1" Content="Оборудование" HorizontalAlignment="Left" Margin="526,17,0,0" VerticalAlignment="Top" FontSize="16" Background="White" Foreground="#FFFD8B00" FontWeight="Bold"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="20,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="65" Width="183" Background="White" FontFamily="Times New Roman"><Run Text="Чертеж Самолета"/><Run Text=", "/><Run Text="ID 231"/><LineBreak/><Run Text="Чертеж Крыла самоелета, ID 543"/><LineBreak/><Run Text="Чертеж двигателя самолета, ID 834"/><LineBreak/><Run Text="Чертеж интерьера, ID 423"/><LineBreak/></TextBlock>
+                    <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="239,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="169" Background="White" FontFamily="Times New Roman"><Run Language="ru-ru" Text="Крыло самолета"/><LineBreak/><Run Language="ru-ru" Text="Двигатель"/><LineBreak/><Run Language="ru-ru" Text="Турбины"/><LineBreak/><Run Language="ru-ru" Text="Лампы"/><LineBreak/><Run/></TextBlock>
+                    <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="504,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="169" Background="White" FontFamily="Times New Roman"><Run Language="ru-ru" Text="Подъемный кран"/><LineBreak/><Run Language="ru-ru" Text="Плавительный аппарат"/><Run Text=" "/><LineBreak/><Run Language="ru-ru" Text="Выездная плита"/><LineBreak/><Run Language="ru-ru" Text="Погрузчик"/><LineBreak/></TextBlock>
+                    <Button Grid.Column="1" Content="Закрыть страницу" HorizontalAlignment="Left" Margin="540,325,0,0" VerticalAlignment="Top" Height="49" Width="144" Background="#FFD03838" Foreground="#FFF7F7F7" FontWeight="Bold" Click="Button_Click_2"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Клиенты
+                     
+                     ">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="36*"/>
+                        <ColumnDefinition Width="361*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Margin="-42,-155,-42,-119" Source="/f'hjgjhn.jpeg" Stretch="Fill" Grid.ColumnSpan="2"/>
+                    <Label Grid.Column="1" Content="Клиенты" HorizontalAlignment="Left" Margin="274,17,0,0" VerticalAlignment="Top" FontSize="16" Background="White" Foreground="#FFFF7500" FontWeight="Bold" Height="32" Width="94"/>
+                    <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="136,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="185" Width="378" Background="White" FontFamily="Times New Roman" FontWeight="Bold" FontSize="16"><Run Text="Николаев Александр Эмильевич"/><Run Language="ru-ru" Text=", 21год"/><LineBreak/><Run Text="Власов Степан Матвеевич"/><Run Language="ru-ru" Text=", 20 лет"/><LineBreak/><Run Text="Козлова Анастасия Ивановна"/><Run Language="ru-ru" Text=", 30 лет"/><LineBreak/><Run Text="Балашова Ксения Артёмовна"/><Run Language="ru-ru" Text=", 27 лет"/><LineBreak/><Run Text="Афанасьева Александра Александровна"/><Run Language="ru-ru" Text=", 50 лет"/><LineBreak/><Run Text="Никифоров Александр Алексеевич"/><Run Language="ru-ru" Text=", 19 лет"/><LineBreak/><Run Text="Кольцова Анастасия Александровна"/><Run Language="ru-ru" Text=", 17 лет"/><LineBreak/><Run Text="Степанова Валерия Степановна"/><Run Language="ru-ru" Text=", 25 лет"/><LineBreak/><Run Text="Калинина Полина Арсентьевна"/><Run Language="ru-ru" Text=", 20 лет"/><LineBreak/><Run/></TextBlock>
+                    <Label Grid.Column="1" Content="ID&#xD;&#xA;" HorizontalAlignment="Left" Margin="560,17,0,0" VerticalAlignment="Top" FontSize="16" Background="White" Foreground="Black" FontWeight="Bold" Height="32" Width="94"/>
+                    <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="560,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="185" Width="115" Background="White" FontFamily="Times New Roman" FontWeight="Bold" FontSize="16" Foreground="Red"><Run Text="213"/><LineBreak/><Run Text="543"/><LineBreak/><Run Text="674"/><LineBreak/><Run Text="978"/><LineBreak/><Run Text="214"/><LineBreak/><Run Text="756"/><LineBreak/><Run Text="345"/><LineBreak/><Run Text="876"/><LineBreak/><Run Text="250"/></TextBlock>
+                    <Button Grid.Column="1" Content="Закрыть страницу" HorizontalAlignment="Left" Margin="540,325,0,0" VerticalAlignment="Top" Height="49" Width="144" Background="#FFD03838" Foreground="#FFF7F7F7" FontWeight="Bold" Click="Button_Click_3"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Вход 
+                     
+                     " FontFamily="Georgia">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="36*"/>
+                        <ColumnDefinition Width="361*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Margin="-42,-155,-42,-119" Source="/пустыня.jpg" Stretch="Fill" Grid.ColumnSpan="2"/>
+                    <Button Grid.Column="1" Content="Закрыть страницу" HorizontalAlignment="Left" Margin="540,325,0,0" VerticalAlignment="Top" Height="49" Width="144" Background="#FFD03838" Foreground="#FFF7F7F7" FontWeight="Bold" Click="Button_Click_3"/>
+                    <Label Content="Введите электронную почту:" HorizontalAlignment="Left" Margin="54,33,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" FontWeight="Bold" FontFamily="Times New Roman" Grid.ColumnSpan="2"/>
+                    <Label Content="Введите пароль:" HorizontalAlignment="Left" Margin="54,128,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" FontWeight="Bold" FontFamily="Times New Roman" Grid.ColumnSpan="2"/>
+                    <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="258,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Height="25"/>
+                    <PasswordBox Grid.Column="1" HorizontalAlignment="Left" Margin="146,136,0,0" VerticalAlignment="Top" Width="165" Height="25"/>
+                    <Button Grid.Column="1" Content="Войти" HorizontalAlignment="Left" Margin="160,217,0,0" VerticalAlignment="Top" Height="41" Width="120" Background="#FFE49D1E" Foreground="White" Click="Button_Click_4" FontFamily="Elephant" FontWeight="Bold"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Регистрация
+                     
+                     ">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="36*"/>
+                        <ColumnDefinition Width="361*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Margin="-42,-155,-42,-119" Source="/океан.jpg" Stretch="Fill" Grid.ColumnSpan="2"/>
+                    <Button Grid.Column="1" Content="Закрыть страницу" HorizontalAlignment="Left" Margin="540,325,0,0" VerticalAlignment="Top" Height="49" Width="144" Background="#FFD03838" Foreground="#FFF7F7F7" FontWeight="Bold" Click="Button_Click_3"/>
+                    <Label Content="" HorizontalAlignment="Left" Margin="54,33,0,0" VerticalAlignment="Top" Foreground="Black" FontSize="20" FontWeight="Bold" FontFamily="Times New Roman" Grid.ColumnSpan="2"/>
+                    <Label Content="Придумайте пароль:" HorizontalAlignment="Left" Margin="54,86,0,0" VerticalAlignment="Top" Foreground="Black" FontSize="20" FontWeight="Bold" FontFamily="Times New Roman" Grid.ColumnSpan="2"/>
+                    <Label Content="Укажите возраст:" HorizontalAlignment="Left" Margin="54,152,0,0" VerticalAlignment="Top" Foreground="Black" FontSize="20" FontWeight="Bold" FontFamily="Times New Roman" Grid.ColumnSpan="2"/>
+                    <Label Content="Введите электронную почту:" HorizontalAlignment="Left" Margin="54,33,0,0" VerticalAlignment="Top" Foreground="Black" FontSize="20" FontWeight="Bold" FontFamily="Times New Roman" Grid.ColumnSpan="2"/>
+                    <PasswordBox Grid.Column="1" HorizontalAlignment="Left" Margin="188,91,0,0" VerticalAlignment="Top" Width="183" Height="28"/>
+                    <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="150,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" Height="25"/>
+                    <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="258,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" Height="25"/>
+                    <Button Grid.Column="1" Content="Зарегистрироваться" HorizontalAlignment="Left" Margin="136,228,0,0" VerticalAlignment="Top" Height="41" Width="144" Background="#FF5D451A" Foreground="White" Click="Button_Click_4" FontWeight="Bold" FontFamily="Georgia"/>
+                </Grid>
+            </TabItem>
+
+
+        </TabControl>
+
+    </Grid>
+</Window>
